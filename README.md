@@ -1,0 +1,1 @@
+This repository was created to fulfill the Programming Language II course assignment at the second meeting held on February 27, 2025. It will contain various code implementations that are needed according to the instructions of the given task.
