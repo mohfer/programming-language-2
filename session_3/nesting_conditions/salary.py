@@ -13,12 +13,12 @@ name = input("Masukkan nama: ")
 nik = input("Masukkan NIK: ")
 
 while True:
-    status = input("Masukkan status (Pegawai Tetap/Pegawai Honorer): ").lower()
-    if status in ["pegawai tetap", "pegawai honorer"]:
+    status = input("Masukkan status pegawai (Tetap/Honorer): ").lower()
+    if status in ["tetap", "honorer"]:
         break
-    print("Status tidak valid. Harap masukkan 'Pegawai Tetap' atau 'Pegawai Honorer'.")
+    print("Status tidak valid. Harap masukkan 'Tetap' atau 'Honorer'.")
 
-if status == "pegawai tetap":
+if status == "tetap":
     salary = permanent_employee_salary
 else:
     salary = honorary_employee_salary
@@ -29,7 +29,7 @@ while True:
         break
     print("Golongan tidak valid. Harap masukkan 'A', 'B', atau 'C'.")
 
-if status == "pegawai tetap":
+if status == "tetap":
     if group == "a":
         bonus = bonus_permanent_employee_group_a
     elif group == "b":
@@ -46,7 +46,7 @@ else:
 
 print(f"\nNama: {name}")
 print(f"NIK: {nik}")
-print(f"Status: {status}")
+print(f"Status pegawai: {status}")
 print(f"Golongan: {group}")
 print(f"Gaji: Rp {salary:,}")
 print(f"Bonus: Rp {bonus:,}")
